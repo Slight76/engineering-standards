@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "engineering-standards",
+  "version": "1.0.0",
+  "description": "Team engineering standards for developers and AI agents: source control and branching, code review, testing, backend and frontend implementation, agent development, and the standards adoption process.",
+  "author": { "name": "Slight76", "url": "https://github.com/Slight76" },
+  "homepage": "https://github.com/Slight76/engineering-standards",
+  "repository": "https://github.com/Slight76/engineering-standards",
+  "license": "MIT",
+  "keywords": ["standards", "agent-skills", "engineering"]
+}
