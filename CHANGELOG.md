@@ -2,6 +2,11 @@
 
 All notable changes to the engineering standards handbook. Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versions follow SemVer.
 
+## 1.0.1 - 2026-10-07
+
+- Declare `license: MIT` in the skill frontmatter so `gh skill publish` validates cleanly.
+- Pin the shared docs-lint workflow to a marketplace commit SHA.
+
 ## 1.0.0 - 2026-10-07
 
 First release as a standalone handbook, split out of `architecture-standards` (see [ADR-0001](adr/0001-adopt-engineering-standards.md) and architecture-standards ADR-0028..0031).

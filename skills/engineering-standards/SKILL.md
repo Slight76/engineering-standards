@@ -1,5 +1,6 @@
 ---
 name: engineering-standards
+license: MIT
 description: Slight76 team engineering standards for developers and AI agents working in .NET, TypeScript/React, Postgres, Fly.io, and GitHub repositories. Use when creating a branch, writing commit messages, opening or squashing a pull request, tagging a release, reviewing code or an agent-authored PR, deciding what tests to write and at which boundary, implementing an ASP.NET Core use case or a React feature, setting up a local dev environment or devcontainer, running tests locally, building or operating a coding agent that must cite rule IDs and report evidence, or adopting the standards baseline in an application repository. Covers rule prefixes SCM (source control), REV (code review), TEST, BE (backend implementation), FE (frontend implementation), and AGT (agent development).
 ---
 # Engineering standards
