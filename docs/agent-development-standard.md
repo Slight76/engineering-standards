@@ -11,7 +11,6 @@ Baseline: 1.0.0. Applies when: a coding agent plans or changes application code
 
 Decision: [ADR-0024](https://github.com/Slight76/architecture-standards/blob/main/adr/0024-implementation-decisions.md). Rules become binding when this baseline is adopted; examples explain the policy and do not establish business requirements.
 
-
 ## Inputs and retrieval order
 
 Read application-local instructions and its immutable standards pin, then the task-relevant domain overview and detailed standards. Use the task map in [AGENTS.md](https://github.com/Slight76/standards-marketplace/blob/main/README.md) to avoid loading the entire team corpus blindly. Read referenced ADRs and accepted local exceptions before choosing an architecture. A current user instruction can change task scope; explain any resulting policy conflict rather than treating a document as higher authority.
@@ -43,7 +42,6 @@ If baseline retrieval fails, use an already verified local copy of that exact re
 ## Context and handoff
 
 Persist concise task state in the approved application work record: objective, commit, decisions, applicable rules, changes, tests run, blockers, next step. Exclude credentials and personal data. A later agent rechecks current repository state before resuming. Treat old task notes as historical claims, not current truth.
-
 
 ## Rules and required evidence
 

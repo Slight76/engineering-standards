@@ -11,7 +11,6 @@ Baseline: 1.0.0. Applies when: an application uses the ASP.NET Core backend prof
 
 Decision: [ADR-0018](https://github.com/Slight76/architecture-standards/blob/main/adr/0018-implementation-decisions.md). Rules become binding when this baseline is adopted; examples explain the policy and do not establish business requirements.
 
-
 ## Default architecture
 
 Use a modular monolith until independent scaling, ownership, fault isolation, or delivery needs justify a service split. Separate frontend/backend repositories do not require one API per entity. Organize by business capability and use case within layers. Keep the model proportional: simple CRUD does not require aggregates, event sourcing, a mediator, or a generic repository framework.
@@ -48,7 +47,6 @@ Validate typed configuration at startup. Separate environment configuration from
 ## Verification
 
 Architecture checks assert forbidden assembly/package dependencies and the composition-root exception at namespace/type level. Assembly-only tests are insufficient to distinguish endpoints from bootstrap code in the same API project. Module boundary tests detect illegal imports and access paths. Unit tests exercise domain/use-case outcomes; database tests use the actual engine; API tests verify auth, validation, mapping, and error behavior. See [persistence](https://github.com/Slight76/data-standards/blob/main/docs/persistence-standard.md).
-
 
 ## Rules and required evidence
 

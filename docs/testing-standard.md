@@ -11,7 +11,6 @@ Baseline: 1.0.0. Applies when: an application implements adopted architecture ru
 
 Decision: [ADR-0020](https://github.com/Slight76/architecture-standards/blob/main/adr/0020-implementation-decisions.md). Rules become binding when this baseline is adopted; examples explain the policy and do not establish business requirements.
 
-
 ## Test at the boundary that can prove the claim
 
 | Claim | Required kind of evidence |
@@ -43,7 +42,6 @@ A second tenant requests the first tenant's resource; two writers race; the resp
 Every application README must document reproducible install/build/test commands and required local services. A command that needs unavailable infrastructure is `not_run`, not passed. CI attaches reports to the tested commit/artifact. Changes to tests and acceptance thresholds receive the same review as implementation. Failing rules cannot be bypassed by relabeling them not applicable without a reason.
 
 This standards repository checks documentation/catalog integrity and evidence shape only. It ships no application runtime, so it cannot prove that a consuming application's CORS, authentication, SQL, or UI complies. Consumers must implement the listed checks.
-
 
 ## Rules and required evidence
 

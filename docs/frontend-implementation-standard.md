@@ -11,7 +11,6 @@ Baseline: 1.0.0. Applies when: an application uses the React/TypeScript client p
 
 Decision: [ADR-0017](https://github.com/Slight76/architecture-standards/blob/main/adr/0017-implementation-decisions.md). Rules become binding when this baseline is adopted; examples explain the policy and do not establish business requirements.
 
-
 ## Project boundaries
 
 Use a separately built client repository. Default to a client-rendered Vite application for authenticated business tools; SSR/SSG requires a documented public-content, performance, or SEO requirement. Runtime and library versions belong in lockfiles and the solution technology profile.
@@ -59,7 +58,6 @@ Every data screen handles loading, empty, error, forbidden, and success states. 
 Test rendered behavior, network states, tenant cache separation, stale responses, and failed mutations. Use Vitest plus Testing Library for component behavior and Playwright for critical journeys in this profile. Mock transport at the boundary; do not duplicate the hook implementation in tests. API contract and real-server integration tests complement mocks. Run build, typecheck, import lint, tests, and production bundle inspection before release.
 
 Sources: [React state design](https://react.dev/learn/choosing-the-state-structure), [TypeScript strict](https://www.typescriptlang.org/tsconfig/strict.html). Package selections are proposed team defaults, resolved and pinned when templates are built.
-
 
 ## Rules and required evidence
 
