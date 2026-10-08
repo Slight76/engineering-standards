@@ -222,6 +222,56 @@
       "document": "docs/code-review-checklist.md",
       "status": "Proposed",
       "applies_when": "a pull request targets a protected branch in a team repository"
+    },
+    {
+      "id": "ORCH-001",
+      "domain": "engineering",
+      "statement": "Autonomous agent loops MUST run every unit of work in an isolated git worktree on a short-lived work branch, never on `main` or `develop`, and MUST merge back only through the repository's normal review path (SCM-001, SCM-003, REV-001).",
+      "verification": "Worktree and branch listing during a run; branch protection settings; merged-PR audit shows a PR and review for each loop-authored change",
+      "adr": "ADR-0001",
+      "document": "docs/agent-orchestration.md",
+      "status": "Proposed",
+      "applies_when": "a team repository runs an autonomous or semi-autonomous loop that schedules, dispatches, and merges work performed by coding agents"
+    },
+    {
+      "id": "ORCH-002",
+      "domain": "engineering",
+      "statement": "Orchestration skills MUST describe process, not tasks: task context lives in the order or backlog item, skills are reusable across every item, and skills contain no secrets or environment-specific values.",
+      "verification": "Skill review on each change; grep for task IDs, hostnames, tokens, and local paths in `SKILL.md` files",
+      "adr": "ADR-0001",
+      "document": "docs/agent-orchestration.md",
+      "status": "Proposed",
+      "applies_when": "a team repository runs an autonomous or semi-autonomous loop that schedules, dispatches, and merges work performed by coding agents"
+    },
+    {
+      "id": "ORCH-003",
+      "domain": "engineering",
+      "statement": "Every order dispatched to a worker MUST name the handbook documents to read at the pinned baseline revision and the verification commands to run; worker output MUST satisfy REV-002 and update `implementation-evidence.json` as the consumer's `AGENTS.md` requires.",
+      "verification": "Order and skill inspection; PR description check; evidence file diff in the worker's PR",
+      "adr": "ADR-0001",
+      "document": "docs/agent-orchestration.md",
+      "status": "Proposed",
+      "applies_when": "a team repository runs an autonomous or semi-autonomous loop that schedules, dispatches, and merges work performed by coding agents"
+    },
+    {
+      "id": "ORCH-004",
+      "domain": "engineering",
+      "statement": "Loops MUST start in a supervised mode where a human approves merges and MAY move to automatic merging only after a recorded decision that defines rollback, a concurrency cap, and a cost or budget limit.",
+      "verification": "Loop configuration shows the mode; ADR or adoption record exists before `auto` is enabled",
+      "adr": "ADR-0001",
+      "document": "docs/agent-orchestration.md",
+      "status": "Proposed",
+      "applies_when": "a team repository runs an autonomous or semi-autonomous loop that schedules, dispatches, and merges work performed by coding agents"
+    },
+    {
+      "id": "ORCH-005",
+      "domain": "engineering",
+      "statement": "Backlog items consumed by a loop MUST have an owner, acceptance criteria, and a loop-checkable done signal, and items lacking them MUST be refined rather than executed; loop runtime state MUST be gitignored while configuration, adapters, and skills MUST be committed and reviewed like code.",
+      "verification": "Backlog sample review; scheduler refuses or plan-firsts unrefined items; `.gitignore` contains the runtime directory; config, adapters, and skills tracked in git",
+      "adr": "ADR-0001",
+      "document": "docs/agent-orchestration.md",
+      "status": "Proposed",
+      "applies_when": "a team repository runs an autonomous or semi-autonomous loop that schedules, dispatches, and merges work performed by coding agents"
     }
   ],
   "externalDecisions": {
