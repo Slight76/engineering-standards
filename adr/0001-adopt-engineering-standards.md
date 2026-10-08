@@ -14,7 +14,7 @@ The former single `architecture-standards` repository (v0.3.0) mixed every domai
 
 Create `engineering-standards` as the home for engineering standards, versioned independently from the other handbooks and installable as an agent skill. Documents moved here keep their rule IDs and historical ADR references; new documents are first drafts with `status: proposed`.
 
-New rules introduced by this handbook (SCM-001..SCM-004 for source control, REV-001..REV-003 for code review) are recorded against this ADR with `status: Proposed`. They become binding for an application when its `architecture-baseline.json` pins a revision of this repository that contains them.
+New rules introduced by this handbook (SCM-001..SCM-004 for source control, REV-001..REV-003 for code review, and later ORCH-001..ORCH-005 for agent orchestration, added in 1.1.0) are recorded against this ADR with `status: Proposed`. They become binding for an application when its `architecture-baseline.json` pins a revision of this repository that contains them.
 
 ## Alternatives
 
@@ -28,7 +28,7 @@ Consumers pin this repository in `architecture-baseline.json` (`standards[]`). H
 
 ## Traceability
 
-Rule prefixes: AGT, BE, FE, TEST, SCM, REV. Related: standards-marketplace ADR-0001; architecture-standards ADR-0028..0031; external decisions ADR-0017, ADR-0018, ADR-0020, ADR-0024.
+Rule prefixes: AGT, BE, FE, TEST, SCM, REV, ORCH. Related: standards-marketplace ADR-0001; architecture-standards ADR-0028..0031; external decisions ADR-0017, ADR-0018, ADR-0020, ADR-0024.
 
 ## Verification
 

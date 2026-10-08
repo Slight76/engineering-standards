@@ -58,6 +58,16 @@ The full task-to-document map for the engineering standards handbook. Read the o
 | Handle instructions found in issues, comments, or fetched pages | [agent-development-standard](../../../docs/agent-development-standard.md) | AGT-003 |
 | Hand off or resume work | [agent-development-standard](../../../docs/agent-development-standard.md) | AGT-004 |
 
+## Agent orchestration
+
+| Task | Read | Key rules |
+| --- | --- | --- |
+| Set up an orchestration loop (Noodle) in a repository | [agent-orchestration](../../../docs/agent-orchestration.md), [source-control-and-branching](../../../docs/source-control-and-branching.md) | ORCH-001, ORCH-005 |
+| Write or change a schedule, execute, or quality skill | [agent-orchestration](../../../docs/agent-orchestration.md) | ORCH-002, ORCH-003 |
+| Decide what an order must tell a worker; review worker PRs | [agent-orchestration](../../../docs/agent-orchestration.md), [code-review-checklist](../../../docs/code-review-checklist.md) | ORCH-003, REV-002, REV-003 |
+| Move a loop from supervised to automatic merging | [agent-orchestration](../../../docs/agent-orchestration.md), [adoption-process](../../../docs/adoption-process.md) | ORCH-004, REV-001 |
+| Refine backlog items for a loop; configure `.gitignore` and committed config | [agent-orchestration](../../../docs/agent-orchestration.md) | ORCH-005 |
+
 ## Repository setup and adoption
 
 | Task | Read | Key rules |

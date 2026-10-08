@@ -1,6 +1,6 @@
 # engineering-standards
 
-Team engineering standards for developers and AI agents: source control and branching, code review, testing, backend and frontend implementation, agent development, and the standards adoption process.
+Team engineering standards for developers and AI agents: source control and branching, code review, testing, backend and frontend implementation, agent development, agent orchestration, and the standards adoption process.
 
 Part of the Slight76 standards handbooks indexed at [standards-marketplace](https://github.com/Slight76/standards-marketplace). Written for a small team and its AI agents.
 
@@ -14,6 +14,7 @@ Part of the Slight76 standards handbooks indexed at [standards-marketplace](http
 | [backend-implementation-standard](docs/backend-implementation-standard.md) | ASP.NET Core project layout, dependency matrix, use-case transactions, lifetimes, async and cancellation, DTO boundaries | BE |
 | [frontend-implementation-standard](docs/frontend-implementation-standard.md) | React/TypeScript feature layout, import matrix, state ownership, strict typing, API adapters | FE |
 | [agent-development-standard](docs/agent-development-standard.md) | Retrieval order, implementation loop, evidence semantics, drift recovery, handoff records for coding agents | AGT |
+| [agent-orchestration](docs/agent-orchestration.md) | Running autonomous agent loops (Noodle as reference): worktree isolation and merge path, process skills vs task orders, handbook and evidence contract, supervised-to-automatic oversight, backlog quality and runtime-state hygiene | ORCH |
 | [adoption-process](docs/adoption-process.md) | Normative language, baseline pinning, exceptions and precedence, manifest and evidence files | — |
 | [engineering-fundamentals-checklist](docs/engineering-fundamentals-checklist.md) | One-page checklist linking every handbook's fundamentals for a repository or release | — |
 | [developer-inner-loop](docs/developer-inner-loop.md) | Local setup, devcontainer, standard `dotnet`/`npm` verbs, pre-commit hooks, running tests locally, fast feedback | — |

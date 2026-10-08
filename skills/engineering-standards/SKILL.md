@@ -1,7 +1,7 @@
 ---
 name: engineering-standards
 license: MIT
-description: Slight76 team engineering standards for developers and AI agents working in .NET, TypeScript/React, Postgres, Fly.io, and GitHub repositories. Use when creating a branch, writing commit messages, opening or squashing a pull request, tagging a release, reviewing code or an agent-authored PR, deciding what tests to write and at which boundary, implementing an ASP.NET Core use case or a React feature, setting up a local dev environment or devcontainer, running tests locally, building or operating a coding agent that must cite rule IDs and report evidence, or adopting the standards baseline in an application repository. Covers rule prefixes SCM (source control), REV (code review), TEST, BE (backend implementation), FE (frontend implementation), and AGT (agent development).
+description: Slight76 team engineering standards for developers and AI agents working in .NET, TypeScript/React, Postgres, Fly.io, and GitHub repositories. Use when creating a branch, writing commit messages, opening or squashing a pull request, tagging a release, reviewing code or an agent-authored PR, deciding what tests to write and at which boundary, implementing an ASP.NET Core use case or a React feature, setting up a local dev environment or devcontainer, running tests locally, building or operating a coding agent that must cite rule IDs and report evidence, running or configuring an autonomous agent loop such as Noodle (worktrees, orders, skills, supervised merging), or adopting the standards baseline in an application repository. Covers rule prefixes SCM (source control), REV (code review), TEST, BE (backend implementation), FE (frontend implementation), AGT (agent development), and ORCH (agent orchestration).
 ---
 # Engineering standards
 
@@ -12,6 +12,7 @@ description: Slight76 team engineering standards for developers and AI agents wo
 - You are deciding what tests to write, where to run them, or how to report results.
 - You are implementing backend (.NET) or frontend (React/TypeScript) code and need the layering and boundary defaults.
 - You are a coding agent that must resolve the pinned baseline, cite rule IDs, and produce evidence.
+- You are setting up or operating an autonomous agent loop (Noodle or similar): writing schedule/execute skills, configuring oversight mode, deciding what the loop may merge.
 - You are setting up a repository, devcontainer, or local inner loop, or adopting the standards baseline.
 
 ## Read by task
@@ -24,6 +25,7 @@ description: Slight76 team engineering standards for developers and AI agents wo
 | Implement an API, use case, or persistence change | [docs/backend-implementation-standard.md](../../docs/backend-implementation-standard.md) |
 | Implement a React feature, state, or API adapter | [docs/frontend-implementation-standard.md](../../docs/frontend-implementation-standard.md) |
 | Act as or build a coding agent | [docs/agent-development-standard.md](../../docs/agent-development-standard.md) |
+| Run or configure an autonomous agent loop (Noodle) | [docs/agent-orchestration.md](../../docs/agent-orchestration.md) |
 | Set up local tooling, hooks, devcontainer | [docs/developer-inner-loop.md](../../docs/developer-inner-loop.md) |
 | New repository or release readiness | [docs/engineering-fundamentals-checklist.md](../../docs/engineering-fundamentals-checklist.md) |
 | Adopt or upgrade the standards baseline | [docs/adoption-process.md](../../docs/adoption-process.md) |

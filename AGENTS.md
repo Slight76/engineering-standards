@@ -6,7 +6,7 @@ This repository is the Slight76 engineering standards handbook for developers an
 
 1. Start with `skills/engineering-standards/SKILL.md`; its "Read by task" table names the one or two documents for your task.
 2. Each document in `docs/` has a frontmatter block, a `Baseline`/`Applies when` line, a linked decision, and a rule table (`| ID | Requirement | Verification |`). Rules become binding when a consuming repository pins this handbook in its `architecture-baseline.json`.
-3. `catalog/catalog.json` is the machine-readable list of rules in this handbook. Historic decisions it references live in `architecture-standards/adr/` and are declared under `externalDecisions`; rules introduced here (SCM, REV) reference the local `adr/0001-adopt-engineering-standards.md`.
+3. `catalog/catalog.json` is the machine-readable list of rules in this handbook. Historic decisions it references live in `architecture-standards/adr/` and are declared under `externalDecisions`; rules introduced here (SCM, REV, ORCH) reference the local `adr/0001-adopt-engineering-standards.md`.
 
 ## Working in this repository
 

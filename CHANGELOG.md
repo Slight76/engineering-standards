@@ -2,6 +2,13 @@
 
 All notable changes to the engineering standards handbook. Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versions follow SemVer.
 
+## 1.1.0 - 2026-10-07
+
+### Added
+
+- `docs/agent-orchestration.md`: running autonomous agent loops with Noodle as the reference implementation. Worktree isolation and the normal merge path, process skills vs task orders, the handbook and evidence contract for workers, supervised-to-automatic oversight with a recorded decision, backlog quality and runtime-state hygiene. Rules ORCH-001..ORCH-005 (Proposed, ADR-0001).
+- Catalog (27 rules), skill description, read-by-task map, and catalog digest updated for the ORCH prefix.
+
 ## 1.0.1 - 2026-10-07
 
 - Declare `license: MIT` in the skill frontmatter so `gh skill publish` validates cleanly.
